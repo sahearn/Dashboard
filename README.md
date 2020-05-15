@@ -17,7 +17,7 @@ Here were the problems:
 ## My Approach
 So the quick and dirty:
 - This is all homegrown PHP (at the time using PHP 7.2.30) and validated HTML5.
-- Dashboard layout starts with standard CSS flex columns.
+- Dashboard layout starts with standard CSS flex columns, but I haven't gotten around to fine-tuning responsive layouts.
 - v0.1 of this was heavily cron dependent, and I didn't bother with the Google Calendar API.  I didn't want to make my calendars public, so I had a job pull the individual ics files.  Then I wrote my own ics parser which handled scheduled events, all-day events, and recurring events.  It was brutal and ugly, but it worked solidly.  Maybe I'll publish it to git someday for reference.
   - Then I came to my senses and took 5 minutes to learn and implement the Calendar API.
 - my web host doesn't allow for memcache[d] or anything, so I wrote my own filesystem-based caching based on SaltwaterC's cache_url.
