@@ -38,4 +38,5 @@ So the quick and dirty:
 5. Fun quotes!
 6. Profit.
 
-... in progress...
+## Screenshot
+![I look good...](screenshot/dashboard.jpg "Screenshot")
