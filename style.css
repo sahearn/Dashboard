@@ -1,0 +1,205 @@
+/* PAGE STYLES */
+body {
+	color : #e4e4e4;
+    font-family : 'Open Sans', sans-serif;
+}
+html { 
+  background: url(texture2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div {
+/*	border : 1px solid gray; */
+}
+
+.column {
+	flex: 1;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+#clock-weather-container {
+	flex-grow : 0.7;
+	text-align : center;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+}
+.sectionHeader {
+	display : none;
+}
+
+
+/* CALENDAR STYLES */
+.calendar-header-house, #calendar-house {
+	text-align : right;
+}
+.calendar-header, #clock-header, #weather-header, #news-header, #quote-header {
+	border-bottom : 1px solid #e8e8e8;
+	color : #45B9C1;
+	font-weight : bold;
+	text-transform : uppercase;
+}
+.calendar-header, #clock-header, #weather-header, #news-header, #quote-header {
+	margin-bottom : 0.5em;
+}
+#calendar-kid, #calendar-house {
+	height: 275px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+}
+.calendar-asof {
+	color : #bbb;
+	font-size : 0.7em;
+}
+.day-block {
+	margin-bottom : 0.5em;
+}
+.day-header {
+	font-weight : bold;
+	margin-bottom : 2px;
+	text-transform : uppercase;
+}
+.day-header-MON {
+	color : #ffffcc; /*#051925;*/
+	font-size : 0.8em;
+}
+.event-block {
+	/*background-color : #173F51;*/
+	font-size : 0.8em;
+	margin-bottom : 10px;
+	padding : 5px;
+}
+.event-block-LEFT {
+	background-image: linear-gradient(to right, rgba(23,63,81,1), rgba(23,63,81,0));
+	border-left : 2px solid yellow;
+}
+.event-block-RIGHT {
+	background-image: linear-gradient(to left, rgba(23,63,81,1), rgba(23,63,81,0));
+	border-right : 2px solid red;
+}
+.event-time {
+	/* text-transform : uppercase; */
+}
+.allday {
+	background-color : #081825;
+	font-size : 0.8em;
+	padding : 1px 6px;
+}
+.settime {
+	font-size : 1.2em;
+	font-weight : bold;
+}
+.ampm {
+	font-size : 0.7em;
+}
+
+
+/* CLOCK STYLES */
+#clock-date {
+	font-weight : bold;
+}
+
+#clockDisplay {
+	font-size : 2em;
+	font-weight : bold;
+	margin-bottom : 0.8em;
+}
+
+
+/* WEATHER STYLES */
+#weather {
+	color : #f0f0f0;
+}
+#weather table {
+	border : 0;
+	margin : 0;
+	padding : 0;
+	width : 100%;
+}
+#weather-cell-image {
+	text-align : right;
+	width : 55%;
+}
+#weather-cell-temp {
+	font-size : 1.6em;
+	padding-bottom : 10px;
+	text-align : left;
+	width : 45%;
+}
+.weather-asof {
+	color : #d8d8d8;
+	font-size : 0.6em;
+}
+
+
+/* NEWS STYLES */
+#news {
+}
+#news-content {
+	font-size : 0.8em;
+}
+#news a {
+	color : #e4e4e4;
+	text-decoration : none;
+}
+#news a:hover {
+	text-decoration : underline;
+}
+#news-asof {
+	color : #bbb;
+	font-size : 0.7em;
+}
+.textindent {
+	margin : 0;
+	padding : 0;
+	padding-left: 2em;
+	text-indent: -2em;
+}
+
+
+/* QUOTE OF THE MOMENT STYLES */
+#quote {
+	flex-grow : 0.8;
+	text-align : right;
+}
+#quoteText {
+	font-size : 0.9em;
+	font-style : italic;
+}
+
+
+
+/* responsive stuff
+ * maybe deal with this later if I have time
+ * https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 680px) {
+	.columns .column {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+}
+*/
