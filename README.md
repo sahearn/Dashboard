@@ -25,15 +25,15 @@ So the quick and dirty:
 
 ## Installation
 1. Grab/create relevant files
-  - dashboard.php: the main page (or call it index.php or whatever)
-  - calendar.php: for pulling and generating calendar content
-  - style.css: stylesheet
-  - cache.php: curl caching
-  - quotes.txt: random quote file
-  - texture.jpg: or whatever you want for the background (except my styles/colors are somewhat based on the provided background)
+  * dashboard.php: the main page (or call it index.php or whatever)
+  * calendar.php: for pulling and generating calendar content
+  * style.css: stylesheet
+  * cache.php: curl caching
+  * quotes.txt: random quote file
+  * texture.jpg: or whatever you want for the background (except my styles/colors are somewhat based on the provided background)
 2. Create/use accuweather API account, fill in your details
 3. Create/use Google Calendar API
-  - authenticate your project, get credentials, etc
+  * authenticate your project, get credentials, etc
 4. Replace news feed with your preferred source
 5. Fun quotes!
 6. Profit.
