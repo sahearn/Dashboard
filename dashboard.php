@@ -12,6 +12,7 @@
 	<meta name="keywords" content="family dashboard" />
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,600&display=swap" rel="stylesheet">
 	
 	<link rel="stylesheet" href="style.css" />
 </head>
@@ -172,6 +173,8 @@ require 'calendar.php';
 		</div>
 	</section>
 </div>
+
+<div id="watermark">Dashboard</div>
 
 <script>
 function showTime(){
