@@ -37,6 +37,17 @@ div {
 	display : none;
 }
 
+#watermark {
+    position : fixed;
+    bottom : 5px;
+    left : 17px;
+    opacity : 0.15;
+    font-family: 'Kanit', sans-serif;
+    font-style : italic;
+    font-size : 3em;
+    font-weight : bold;
+    text-transform : uppercase;
+}
 
 /* CALENDAR STYLES */
 .calendar-header-house, #calendar-house {
